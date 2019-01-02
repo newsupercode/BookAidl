@@ -11,9 +11,7 @@ import android.util.Log;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
-import com.example.administrator.ipcapplication.Book;
-import com.example.administrator.ipcapplication.IOnNewBookArrivedListener;
-import com.example.administrator.ipcapplication.IBookManager;
+
 public class BookService  extends Service {
     private CopyOnWriteArrayList<Book> mBooklist=new CopyOnWriteArrayList<>();
     private RemoteCallbackList<IOnNewBookArrivedListener> mListeners=new RemoteCallbackList<>();
